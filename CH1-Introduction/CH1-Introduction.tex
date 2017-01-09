@@ -1,1 +1,42 @@
 
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{numprint}
+
+\author{yuyang339@gmail.com}
+\title{Pattern Recognition and Machine learning}
+\date{}
+\begin{document}
+
+\maketitle
+
+\textbf{Disclaimer.} Use of the information contained within this project is at your sole risk. The project maintainer doesn't guarentee the solutions are correct.
+
+\section*{Chapter 1 Introduction}
+\subsection*{Problem 1}
+\begin{flushleft}
+Apply partial derivative to $E(\boldsymbol{\omega})$ with respect to $\omega_{i}$ and set it to zero.
+
+\begin{equation}
+\frac{\partial E(\boldsymbol{\omega})}{\partial \omega_{i}} = \sum_{n=1}^{N}{(y-t_{n})}\frac{\partial y}{\partial \omega_{i}} = \sum_{n=1}^{N}{(y-t_{n})}(x_{n})^i =\sum_{n=1}^{N}{(\sum_{j=0}^{M}\omega_{j}(x_{n})^{j}-t_{n})}(x_{n})^i = 0
+\end{equation}
+
+\begin{equation}
+\sum_{j=0}^{M}\omega_{j}\sum_{n=1}^{N}{(x_{n})^{i+j}= \sum_{n=1}^{N}t_{n}}(x_{n})^i 
+\end{equation}
+where
+\begin{equation}
+A_{i}^{j} = \sum_{n=1}^{N}{(x_{n})^{i+j}}
+\end{equation}
+
+\begin{equation}
+T_{i} = \sum_{n=1}^{N}t_{n}(x_{n})^i
+\end{equation}
+
+\subsection*{Problem 2}
+
+\end{flushleft}
+
+
+\end{document}
