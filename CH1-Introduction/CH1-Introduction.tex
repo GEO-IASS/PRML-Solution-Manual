@@ -50,6 +50,32 @@ P(Orange) = P(Orange|Green Box)P(Green Box) + \\
 \begin{equation}
 P(Green box|Orange) = \frac{P(Orange|Green Box)}{P(Orange)} = \frac{0.18}{0.34}
 \end{equation}
+
+\subsection*{Problem 3}
+Under a nonlinear change of variable, a probability density transforms differently from a simple function, due to the Jacobian factor.
+
+Now consider the behaviour of a probability density $p_x(x)$ under the change of variables $x = g(y)$, where the density with respect to the new variable is $p_y(y)$ and is given by (1.27).
+
+Let us write $\lvert{g^{'}(y)}\rvert = sg^{'}(y)$ where 
+$s\in{−1, +1}$. Then ((1.27)) can be written
+\begin{equation}
+p_y(y) = p_x(g(y))sg^{'}(y)
+\end{equation}
+Differentiating both sides with respect to y then gives
+\begin{equation}
+p_y^{'}(y) = sp_x^{'}(g(y)){g^{'}(y)}^2 + sp_x(g(y))g^{''}(y)
+\end{equation}
+
+
+
+
+
+
+Let's discuss it in two cases.
+The first case is the transformation of $x=g(y)$ is non-linear.
+Since the second term of the right-hand side of equation (8) is not zero, the value of x obtained by maximizing $p_x(x)$ will not be the value obtained by transforming to $p_y(y)$ then maximizing with respect to $y$ and then transforming back to $x$. 
+
+In the case that the transformation of $x=g(y)$ is non-linear, the  the second term of the right-hand side of equation (8) is not zero, so the value of x obtained by maximizing $p_x(x)$ will be the value obtained by transforming to $p_y(y)$ then maximizing with respect to $y$ and then transforming back to $x$.
 \end{flushleft}
 
 
