@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{numprint}
+
+\author{yuyang339@gmail.com}
+\title{Pattern Recognition and Machine learning}
+\date{}
+\begin{document}
+
+\maketitle
+
+\textbf{Disclaimer.} Use of the information contained within this project is at your sole risk. The project maintainer doesn't guarentee the solutions are correct.
+
+\section*{Chapter 2 Probability Distribution}
+\subsection*{Problem 8}
+\begin{flushleft}
+
+\begin{equation}
+\begin{split}
+E_y{}[E_{x}[x|y]] = \int \int xp(x|y) dx dy \\
+= \int \int xp(x, y)/p(y) dx p(y) dy \\
+= \int x \int p(x,y) dy dx \\
+= \int x p(x) dx
+= E[x] 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+E_{y}[var_{x}[x|y]] = \int p(y) [E_{x}[x^2|y] - E_{x}^2[x|y]] dy \\
+= E_{y}[E_{x}[x^2|y]] - E_{y}[E_{x}^2[x|y]]
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+var_{y}[E_{x}[x|y]] = E_{y}[E_{x}^2[x|y]] - E_{y}^2[E_x[x|y]]
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+E_{y}[var_{x}[x|y]] + var_{y}[E_{x}[x|y]] \\
+= E_{y}[E_{x}[x^2|y]] - E_{y}^2[E_x[x|y]] \\
+\end{split}
+\end{equation}
+
+We has shown that
+\begin{equation}
+\begin{split}
+E_y{}[E_{x}[x|y]] = E[x]
+\end{split}
+\end{equation}
+
+Therefore, 
+\begin{equation}
+\begin{split}
+E_{y}[E_{x}[x^2|y]] = E[x^2] \\
+E_{y}^2[E_x[x|y]] = E^2[x]
+\end{split}
+\end{equation}
+
+Finally,
+
+\begin{equation}
+\begin{split}
+E_{y}[E_{x}[x^2|y]] - E_{y}^2[E_x[x|y]] = E[x^2] -  E^2[x] \\
+= var[x]
+\end{split}
+\end{equation}
+
+\end{flushleft}
+
+
+\end{document}
